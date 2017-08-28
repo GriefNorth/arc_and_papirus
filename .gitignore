@@ -1,3 +1,4 @@
 .gitattributes
 .osc/*
 arc-theme/.osc/*
+papirus-icon-theme/.osc/*
