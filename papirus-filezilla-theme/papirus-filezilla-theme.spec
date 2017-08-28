@@ -41,6 +41,7 @@ find %{buildroot} -name "*.sh" -exec chmod -x {} \;
 %files
 %defattr(-,root,root)
 %doc AUTHORS LICENSE
+%dir %{_datadir}/filezilla
 %{_datadir}/filezilla/resources/papirus
 %{_datadir}/filezilla/resources/epapirus
 %{_datadir}/filezilla/resources/papirus-dark
