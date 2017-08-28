@@ -28,7 +28,7 @@ BuildRequires:  automake
 BuildRequires:  gtk3-devel
 Requires:       gtk2-engine-murrine
 Requires:       gtk2-theming-engine-adwaita
-BuildArch;      noarch
+BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
