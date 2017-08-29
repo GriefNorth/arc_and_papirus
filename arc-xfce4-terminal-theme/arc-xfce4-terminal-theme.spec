@@ -21,7 +21,6 @@ Release:        1%{dist}
 License:        GPL-3.0
 Summary:        Arc theme for xfce4-terminal
 Url:            https://aur.archlinux.org/packages/arc-dark-xfce4-terminal/
-
 Group:          System/GUI/Other
 Source:         %{name}-%{version}.tar.gz
 Requires:       xfce4-terminal
@@ -32,12 +31,15 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Arc theme for color profile xfce4-terminal
 
 %prep
-%setup -q
+%setup -q -c
 
 %install
-install -d -m 644 arc-dark.theme %{buildroot}/xfce4/terminal/colorschemes/arc-dark.theme
+install -Dm 644 arc-dark.theme %{buildroot}%{_datadir}/xfce4/terminal/colorschemes/arc-dark.theme
 
 %files
 %defattr(-,root,root)
-
+%dir %{_datadir}/xfce4
+%dir %{_datadir}/xfce4/terminal
+%dir %{_datadir}/xfce4/terminal/colorschemes
+%{_datadir}/xfce4/terminal/colorschemes/arc-dark.theme
 %changelog
