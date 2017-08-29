@@ -17,7 +17,7 @@
 
 Name:           arc-xfce4-terminal-theme
 Version:        1.2
-Release:        1%{dist}
+Release:        1%{?dist}
 License:        GPL-3.0
 Summary:        Arc theme for xfce4-terminal
 Url:            https://aur.archlinux.org/packages/arc-dark-xfce4-terminal/

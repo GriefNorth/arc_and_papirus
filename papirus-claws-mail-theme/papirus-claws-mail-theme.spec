@@ -17,7 +17,7 @@
 
 Name:           papirus-claws-mail-theme
 Version:        20170715
-Release:        1%{dist}
+Release:        1%{?dist}
 License:        GPL-3.0
 Summary:        Papirus Themes for Claws Mail
 Url:            https://github.com/PapirusDevelopmentTeam/papirus-claws-mail-theme

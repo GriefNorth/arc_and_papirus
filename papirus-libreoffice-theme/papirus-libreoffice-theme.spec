@@ -18,7 +18,7 @@
 
 Name:           papirus-libreoffice-theme
 Version:        20170228
-Release:        1%{dist}
+Release:        1%{?dist}
 Summary:        Papirus theme for Libreoffice
 License:        GPL-3.0
 Group:          System/GUI/Other

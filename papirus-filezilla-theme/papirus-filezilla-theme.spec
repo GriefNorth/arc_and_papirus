@@ -17,7 +17,7 @@
 
 Name:           papirus-filezilla-theme
 Version:        20170119
-Release:        1%{dist}
+Release:        1%{?dist}
 License:        GPL-3.0
 Summary:        Papirus theme for FileZilla
 Url:            https://github.com/PapirusDevelopmentTeam/papirus-filezilla-themes

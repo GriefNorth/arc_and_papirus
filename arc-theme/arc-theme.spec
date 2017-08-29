@@ -17,7 +17,7 @@
 
 Name:           arc-theme
 Version:        20150605
-Release:        1%{dist}
+Release:        1%{?dist}
 License:        GPL-3
 Summary:        Arc is a theme for GTK 3, GTK 2 and Gnome-Shell.
 Url:            https://github.com/horst3180/Arc-theme
