@@ -1,0 +1,6 @@
+<directory name="sni-qt-patched" rev="2" srcmd5="986004c96c51548d738d551b50ca3eaa" vrev="2">
+  <serviceinfo code="succeeded" xsrcmd5="468d872861b74ee03641daaf5297a016" />
+  <entry md5="7030b7e9dab6f10b0b93cdca81868e30" mtime="1504643764" name="_service" size="620" />
+  <entry md5="b17ac84f9c78f94d6a0b4d6e3b705623" mtime="1504643764" name="baselibs.conf" size="15" />
+  <entry md5="bf4888b02e3d7fdb2d7ca95b68118519" mtime="1504643937" name="sni-qt-patched.spec" size="1892" />
+</directory>
