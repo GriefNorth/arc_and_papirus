@@ -1,0 +1,5 @@
+<directory name="hardcode-tray" rev="33" srcmd5="b9470fbc8c9afc29bf8c59a2d0c06d55" vrev="33">
+  <serviceinfo code="succeeded" xsrcmd5="49f1a305931e2935cc1c79a57feef599" />
+  <entry md5="0a19bd4d8b073505bd50698dc399625f" mtime="1504600299" name="_service" size="626" />
+  <entry md5="c193b294dd5ea238f2d09d5ad0036f9d" mtime="1504643809" name="hardcode-tray.spec" size="1828" />
+</directory>

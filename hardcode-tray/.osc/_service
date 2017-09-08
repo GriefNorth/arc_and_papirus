@@ -1,0 +1,15 @@
+<services>
+        <service name="tar_scm">
+                <param name="scm">git</param>
+                <param name="url">git://github.com/bil-elmoussaoui/Hardcode-Tray.git</param>
+                <param name="versionformat">%cd</param>
+                <param name="package-meta"></param>
+                <param name="revision"></param>
+                <param name="filename">Hardcode-Tray</param>
+        </service>
+        <service name="recompress">
+                <param name="file">*.tar</param>
+                <param name="compression">gz</param>
+        </service>
+        <service name="set_version"/>
+</services>
