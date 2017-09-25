@@ -42,9 +42,13 @@ ePapirus
 Papirus
 Papirus-Dark
 Papirus-Light
+Papirus-Adapta
+Papirus-Adapta-Nokto
 
 %prep
 %setup -q
+
+%build
 
 %install
 make DESTDIR=%{buildroot} install
@@ -55,6 +59,8 @@ make DESTDIR=%{buildroot} install
 %icon_theme_cache_post Papirus
 %icon_theme_cache_post Papirus-Light
 %icon_theme_cache_post Papirus-Dark
+%icon_theme_cache_post Papirus-Adapta
+%icon_theme_cache_post Papirus-Adapta-Nokto
 
 %files
 %defattr(-,root,root)
@@ -63,9 +69,19 @@ make DESTDIR=%{buildroot} install
 %{_datadir}/icons/Papirus
 %{_datadir}/icons/Papirus-Light
 %{_datadir}/icons/Papirus-Dark
+%{_datadir}/icons/Papirus-Adapta
+%{_datadir}/icons/Papirus-Adapta-Nokto
 %ghost %{_datadir}/icons/ePapirus/icon-theme.cache
 %ghost %{_datadir}/icons/Papirus/icon-theme.cache
 %ghost %{_datadir}/icons/Papirus-Light/icon-theme.cache
 %ghost %{_datadir}/icons/Papirus-Dark/icon-theme.cache
+%ghost %{_datadir}/icons/Papirus-Adapta/icon-theme.cache
+%ghost %{_datadir}/icons/Papirus-Adapta-Nokto/icon-theme.cache
+
+%pretrans
+if [ -d %{_datadir}/icons/Papirus-Dark/22x22/panel ] && [ -d %{_datadir}/icons/Papirus-Dark/24x24/panel ]; then
+       rm -rf %{_datadir}/icons/Papirus-Dark/22x22/panel
+       rm -rf %{_datadir}/icons/Papirus-Dark/24x24/panel
+fi
 
 %changelog
